@@ -11,3 +11,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.gradient-text {
+  /* Fallback: Set a background color. */
+  background-color: black;
+
+  font-size: 2rem;
+  background: linear-gradient(45deg, rgb(89, 192, 89), rgb(56, 139, 249), rgb(222, 30, 222));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  display: inline-block
+}

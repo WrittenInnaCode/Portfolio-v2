@@ -3,8 +3,8 @@ import Navigation from './Navigation'
 function Header({ setCurrentPage }) {
     return (
         <header>
-            <h1>Inna Sherstnyova</h1>
-            <Navigation setCurrentPage={setCurrentPage}/>
+            <h1 className='gradient-text'>Inna Sherstnyova</h1>
+            <Navigation setCurrentPage={setCurrentPage} />
         </header>
     );
 }

@@ -1,29 +1,36 @@
 import React, { useState } from "react";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+
+import About from './components/pages/About';
+import Portfolio from './components/pages/Portfolio';
+import Contact from './components/pages/Contact';
 
 function App() {
 
   const [curentPage, setCurrentPage] = useState('about');
+
   const renderCurrentPage = () => {
     switch (curentPage) {
       case 'about':
-        return <h2>About</h2>;
+        return <About />;
       case 'portfolio':
-        return <h2>Portfolio</h2>;
+        return <Portfolio />;
       case 'contact':
-        return <h2>Contact</h2>;
+        return <Contact />;
       default:
-        return <h2>About</h2>;
+        return <About />;
     }
   }
 
   return (
     <>
-      <Header
-        setCurrentPage={setCurrentPage}
-      />
+      <Header setCurrentPage={setCurrentPage} />
+
       {renderCurrentPage()}
+
       <Footer />
     </>
   );
