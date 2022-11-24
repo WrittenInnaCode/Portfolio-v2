@@ -25,3 +25,37 @@ code {
   -webkit-text-fill-color: transparent;
   display: inline-block
 }
+
+
+
+.portfolio-box {
+  position: relative;
+  display: block;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.portfolio-caps {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background: white;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+  display: flex;
+  justify-content: center;
+ 
+}
+.portfolio-box .portfolio-caps .portfolio-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.portfolio-box:hover .portfolio-caps {
+  opacity: 0.9;
+}
