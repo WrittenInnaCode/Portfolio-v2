@@ -15,8 +15,8 @@ function Project({ project }) {
                 <div className="portfolio-caps">
                     <div className="portfolio-content gradient-text">
 
-                        <a href={deployedLink}>{name}</a> {" "}
-                        <a href={githubLink}><i className='fab fa-github'></i></a>
+                        <a href={deployedLink} target="_blank" rel="noreferrer">{name}</a> {" "}
+                        <a href={githubLink} target="_blank" rel="noreferrer"><i className='fab fa-github'></i></a>
                         <p className="gradient-text fs-6">{description}</p>
                         
                     </div>
