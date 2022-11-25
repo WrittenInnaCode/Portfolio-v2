@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -29,11 +30,13 @@ function App() {
 
   return (
     <>
-      <Header setCurrentPage={setCurrentPage} />
+      <div className="bgColor">
+        <Header setCurrentPage={setCurrentPage} />
 
-      {renderCurrentPage()}
+        {renderCurrentPage()}
 
-      <Footer />
+        <Footer />
+      </div>
     </>
   );
 }

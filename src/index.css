@@ -26,15 +26,40 @@ code {
   display: inline-block
 }
 
-.photo{
+.bgColor {
+  background: linear-gradient(45deg, rgba(89, 192, 89, 0.380), rgba(56, 140, 249, 0.380), rgba(222, 30, 222, 0.380));
+  min-height: 100vh;
+}
+
+.font-monospace{
+  /* color: white; */
+  text-shadow: 2px 2px 4px #ffffff;
+}
+
+.photo {
   max-width: 500px;
+  border-radius: 20px;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: right;
+}
+
+@media screen and (max-width: 800px) {
+  .about {
+    flex-direction: column;
+  }
 }
 
 .portfolio-box {
   position: relative;
-  display: block;
-  max-width: 600px;
-  /* margin: 0 auto; */
+  /* display: block; */
+  /* max-width: 600px;
+  margin: 0 auto; */
 }
 
 .portfolio-caps {
@@ -49,8 +74,8 @@ code {
   transition: all 0.2s;
   display: flex;
   justify-content: center;
- 
 }
+
 .portfolio-box .portfolio-caps .portfolio-content {
   display: flex;
   justify-content: center;

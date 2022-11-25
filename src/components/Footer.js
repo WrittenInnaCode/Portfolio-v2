@@ -10,17 +10,17 @@ function Footer() {
         },
         {
             name: 'fab fa-linkedin',
-            link: 'www.linkedin.com/in/inna-sherstnyova-b6a56a1b0'
+            link: 'https://www.linkedin.com/in/inna-sherstnyova-b6a56a1b0'
         },
         {
             name: 'fas fa-at',
-            link: 'writteninnacode@gmail.com'
+            link: 'mailto:writteninnacode@gmail.com'
         },
     ]
 
     return (
         <footer>
-            <nav className="navbar fixed-bottom bg-light">
+            <nav className="navbar fixed-bottom d-flex justify-content-evenly bg-light fs-4">
 
                 {icons.map(icon =>
                     <a href={icon.link} key={icon.name} target="_blank" rel="noopener noreferrer"><i className={icon.name}></i></a>
