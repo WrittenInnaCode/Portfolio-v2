@@ -31,10 +31,6 @@ code {
   min-height: 100vh;
 }
 
-.font-monospace{
-  /* color: white; */
-  text-shadow: 2px 2px 4px #ffffff;
-}
 
 .photo {
   max-width: 500px;
@@ -46,7 +42,7 @@ code {
   justify-content: center;
   align-items: center;
   justify-content: space-evenly;
-  text-align: right;
+  /* text-align: right; */
 }
 
 @media screen and (max-width: 800px) {
@@ -57,9 +53,6 @@ code {
 
 .portfolio-box {
   position: relative;
-  /* display: block; */
-  /* max-width: 600px;
-  margin: 0 auto; */
 }
 
 .portfolio-caps {
@@ -85,4 +78,8 @@ code {
 
 .portfolio-box:hover .portfolio-caps {
   opacity: 0.9;
+}
+
+.project-col{
+  padding: 1rem;
 }
