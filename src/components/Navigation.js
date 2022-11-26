@@ -5,7 +5,7 @@ function Navigation({ setCurrentPage }) {
 
         <nav className="navbar navbar-expand-lg bg-light">
             <div className="container-fluid">
-                <a className="navbar-brand gradient-text fs-4" href="#">Inna Sherstnyova</a>
+                <a className="navbar-brand gradient-text fs-4">Inna Sherstnyova</a>
 
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
