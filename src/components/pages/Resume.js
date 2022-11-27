@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 
 
@@ -7,30 +7,37 @@ function Resume() {
     const frontIcons = [
         {
             icon: 'devicon-html5-plain devicon',
-            title: 'HTML5'
+            iconColor: "devicon-html5-plain colored deviconColor",
+            title: 'HTML5',
         },
         {
             icon: 'devicon-css3-plain devicon',
+            iconColor: "devicon-css3-plain colored deviconColor",
             title: 'CSS'
         },
         {
             icon: 'devicon-javascript-plain devicon',
+            iconColor: "devicon-javascript-plain colored deviconColor",
             title: 'JavaScript'
         },
         {
             icon: 'devicon-jquery-plain devicon',
+            iconColor: "devicon-jquery-plain colored deviconColor",
             title: 'jQuery'
         },
         {
             icon: 'devicon-react-original devicon',
+            iconColor: "devicon-react-original colored deviconColor",
             title: 'React'
         },
         {
             icon: 'devicon-bootstrap-plain devicon',
+            iconColor: "devicon-bootstrap-plain colored deviconColor",
             title: 'Bootstrap'
         },
         {
             icon: 'devicon-handlebars-plain devicon',
+            iconColor: "devicon-handlebars-plain colored deviconColor",
             title: 'Handlebars'
         }
 
@@ -39,30 +46,37 @@ function Resume() {
     const backIcons = [
         {
             icon: 'devicon-nodejs-plain devicon',
+            iconColor: "devicon-nodejs-plain colored deviconColor",
             title: 'Node'
         },
         {
             icon: 'devicon-express-original devicon',
+            iconColor: "devicon-express-original colored deviconColor",
             title: 'Express'
         },
         {
             icon: 'devicon-mysql-plain devicon',
+            iconColor: "devicon-mysql-plain colored deviconColor",
             title: 'MySQL'
         },
         {
             icon: 'devicon-sequelize-plain devicon',
+            iconColor: "devicon-sequelize-plain colored deviconColor",
             title: 'Sequelize'
         },
         {
             icon: 'devicon-sqlite-plain devicon',
+            iconColor: "devicon-sqlite-plain colored deviconColor",
             title: 'SQLite'
         },
         {
             icon: 'devicon-mongodb-plain devicon',
+            iconColor: "devicon-mongodb-plain colored deviconColor",
             title: 'MongoDB'
         },
         {
             icon: 'devicon-graphql-plain devicon',
+            iconColor: "devicon-graphql-plain colored deviconColor",
             title: 'GraphQL'
         },
     ];
@@ -70,30 +84,37 @@ function Resume() {
     const otherIcons = [
         {
             icon: 'devicon-heroku-plain devicon',
+            iconColor: "devicon-heroku-plain colored deviconColor",
             title: 'Heroku'
         },
         {
             icon: 'devicon-webpack-plain devicon',
+            iconColor: "devicon-webpack-plain colored deviconColor",
             title: 'Webpack'
         },
         {
             icon: 'devicon-vscode-plain devicon',
+            iconColor: "devicon-vscode-plain colored deviconColor",
             title: 'VSCode'
         },
         {
             icon: 'devicon-git-plain devicon',
+            iconColor: "devicon-git-plain colored deviconColor",
             title: 'Git'
         },
         {
             icon: 'devicon-github-original devicon',
+            iconColor: "devicon-github-original colored deviconColor",
             title: 'Github'
         },
         {
             icon: 'devicon-jest-plain devicon',
+            iconColor: "devicon-jest-plain colored deviconColor",
             title: 'Jest'
         },
         {
             icon: 'devicon-photoshop-plain devicon',
+            iconColor: "devicon-photoshop-plain colored deviconColor",
             title: 'Photoshop'
         }
     ];
@@ -102,8 +123,6 @@ function Resume() {
     return (
 
         <div>
-
-
         <Container className='p-3 pt-5'>
 
             <div className=' bg-light bg-opacity-50 rounded-4 p-4 shadow'>
@@ -117,8 +136,9 @@ function Resume() {
 
                     <Row className='mb-4'>
                         {frontIcons.map(frontIcon =>
-                            <Col className='iconText'>
-                                <i className={frontIcon.icon}></i>
+                            <Col className='iconText wrapper'>
+                               <div className='box1'><i className={frontIcon.icon}></i></div>
+                               <div className='box2'><i className={frontIcon.iconColor}></i></div>
 
                                 <p className='whitetxt'>{frontIcon.title}</p>
 
@@ -134,8 +154,9 @@ function Resume() {
 
                     <Row className='mb-4'>
                         {backIcons.map(backIcon =>
-                            <Col className='iconText'>
-                                <i className={backIcon.icon}></i>
+                            <Col className='iconText wrapper'>
+                                <div className='box1'><i className={backIcon.icon}></i></div>
+                                <div className='box2'><i className={backIcon.iconColor}></i></div>
 
                                 <p className='whitetxt'>{backIcon.title}</p>
 
@@ -151,8 +172,9 @@ function Resume() {
 
                     <Row>
                         {otherIcons.map(otherIcon =>
-                            <Col className='iconText'>
-                                <i className={otherIcon.icon}></i>
+                            <Col className='iconText wrapper'>
+                                <div className='box1'><i className={otherIcon.icon}></i></div>
+                                <div className='box2'><i className={otherIcon.iconColor}></i></div>
 
                                 <p className='whitetxt'>{otherIcon.title}</p>
 

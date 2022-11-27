@@ -88,6 +88,10 @@ code {
   color: rgb(255, 255, 255);
   text-shadow: 2px 2px 5px #00000072;
 }
+.deviconColor{
+  font-size: 350%;
+  text-shadow: 2px 2px 5px #00000072;
+}
 
 /* .devicon:hover{
   font-size: 400%;
@@ -106,4 +110,25 @@ code {
 
 .iconText{
   text-align: center;
+}
+
+.box1 {
+  display: block;
+}
+
+.box2 {
+  display: none;
+}
+
+.wrapper{
+  width: auto;
+  display: inline-block;
+}
+
+.wrapper:hover .box1 {
+  display: none;
+}
+
+.wrapper:hover .box2 {
+  display: block;
 }
