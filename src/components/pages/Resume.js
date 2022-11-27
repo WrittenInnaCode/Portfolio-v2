@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Row, Col, Card } from 'react-bootstrap';
 
 
 function Resume() {
@@ -121,70 +121,65 @@ function Resume() {
 
 
     return (
-
-        <div>
-        <Container className='p-3 pt-5'>
-
-            <div className=' bg-light bg-opacity-50 rounded-4 p-4 shadow'>
+<div className='d-flex justify-content-center'>
+        <div className='bg-light bg-opacity-50  m-5 p-3 shadow iconBox '>
 
             <h4 className='border-bottom border-white pb-1 ps-1'>Skills & Technologies</h4>
-            <p className='p-3 ps-1'> I enjoy learning and mastering new technologies. I gained most of these skills in the coding bootcamp I am currently in.</p>
+            <p className='p-3 ps-1'> I enjoy learning and mastering new technologies. I gained most of these skills in the coding bootcamp.</p>
 
-                {/* Front-End Icons */}
-                <div className=' shadow rounded mb-4'>
-                    <div className='text-center'><p className='text-muted fs-4 pt-2'>Client-Side</p></div>
+            {/* Front-End Icons */}
+            <div className='shadow rounded mb-4'>
+                <div className='text-center'><p className='text-muted fs-5 pt-2'>Client-Side</p></div>
 
-                    <Row className='mb-4'>
-                        {frontIcons.map(frontIcon =>
-                            <Col className='iconText wrapper'>
-                               <div className='box1'><i className={frontIcon.icon}></i></div>
-                               <div className='box2'><i className={frontIcon.iconColor}></i></div>
+                <Row className='mb-4'>
+                    {frontIcons.map(frontIcon =>
+                        <Col className='iconText wrapper ps-2'>
+                            <div className='box1'><i className={frontIcon.icon}></i></div>
+                            <div className='box2'><i className={frontIcon.iconColor}></i></div>
 
-                                <p className='whitetxt'>{frontIcon.title}</p>
+                            <p className='whitetxt text-muted'>{frontIcon.title}</p>
 
-                            </Col>
-                        )}
-                    </Row>
-                </div>
-
-
-                {/* Back-End Icons */}
-                <div className=' shadow rounded mb-4'>
-                    <div className='text-center'><p className='text-muted fs-4 pt-2'>Server-Side</p></div>
-
-                    <Row className='mb-4'>
-                        {backIcons.map(backIcon =>
-                            <Col className='iconText wrapper'>
-                                <div className='box1'><i className={backIcon.icon}></i></div>
-                                <div className='box2'><i className={backIcon.iconColor}></i></div>
-
-                                <p className='whitetxt'>{backIcon.title}</p>
-
-                            </Col>
-                        )}
-                    </Row>
-                </div>
-
-
-                {/* Other Icons */}
-                <div className=' rounded shadow'>
-                    <div className='text-center'><p className='text-muted fs-4 pt-2'>Other</p></div>
-
-                    <Row>
-                        {otherIcons.map(otherIcon =>
-                            <Col className='iconText wrapper'>
-                                <div className='box1'><i className={otherIcon.icon}></i></div>
-                                <div className='box2'><i className={otherIcon.iconColor}></i></div>
-
-                                <p className='whitetxt'>{otherIcon.title}</p>
-
-                            </Col>
-                        )}
-                    </Row>
-                </div>
-
+                        </Col>
+                    )}
+                </Row>
             </div>
-        </Container>
+
+
+            {/* Back-End Icons */}
+            <div className='shadow rounded mb-4'>
+                <div className='text-center'><p className='text-muted fs-5 pt-2'>Server-Side</p></div>
+
+                <Row className='mb-4'>
+                    {backIcons.map(backIcon =>
+                        <Col className='iconText wrapper ps-2'>
+                            <div className='box1'><i className={backIcon.icon}></i></div>
+                            <div className='box2'><i className={backIcon.iconColor}></i></div>
+
+                            <p className='whitetxt text-muted'>{backIcon.title}</p>
+
+                        </Col>
+                    )}
+                </Row>
+            </div>
+
+
+            {/* Other Icons */}
+            <div className='rounded shadow'>
+                <div className='text-center'><p className='text-muted fs-5 pt-2'>Other</p></div>
+
+                <Row>
+                    {otherIcons.map(otherIcon =>
+                        <Col className='iconText wrapper ps-2'>
+                            <div className='box1'><i className={otherIcon.icon}></i></div>
+                            <div className='box2'><i className={otherIcon.iconColor}></i></div>
+
+                            <p className='whitetxt text-muted'>{otherIcon.title}</p>
+
+                        </Col>
+                    )}
+                </Row>
+            </div>
+        </div>
         </div>
 
     );

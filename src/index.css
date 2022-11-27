@@ -5,6 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 code {
@@ -84,28 +87,21 @@ code {
 }
 
 .devicon{
-  font-size: 350%;
+  font-size: 200%;
   color: rgb(255, 255, 255);
   text-shadow: 2px 2px 5px #00000072;
 }
 .deviconColor{
-  font-size: 350%;
+  font-size: 200%;
   text-shadow: 2px 2px 5px #00000072;
 }
 
-/* .devicon:hover{
-  font-size: 400%;
-  color: white;
-  font-size: 450%;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  transition: all 0.2s;
-} */
-
 .whitetxt{
-  color: rgb(255, 255, 255);
+  /* color: rgb(255, 255, 255);
   text-shadow: 2px 2px 5px #00000072;
-  font-weight: bold;
+  font-weight: bold; */
+ 
+  text-align: center;
 }
 
 .iconText{
@@ -131,4 +127,13 @@ code {
 
 .wrapper:hover .box2 {
   display: block;
+}
+
+.footer {
+  flex: 0 0 50px;
+  margin-top: auto;
+}
+
+.iconBox{
+  max-width: 40rem;
 }
