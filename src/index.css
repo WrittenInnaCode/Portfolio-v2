@@ -5,9 +5,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
 }
 
 code {
@@ -15,6 +12,11 @@ code {
     monospace;
 }
 
+h2{
+  color: white;
+  margin: 1rem;
+  padding-top: 1rem;
+}
 .gradient-text {
   /* Fallback: Set a background color. */
   background-color: black;
@@ -96,15 +98,12 @@ code {
   text-shadow: 2px 2px 5px #00000072;
 }
 
-.whitetxt{
-  /* color: rgb(255, 255, 255);
-  text-shadow: 2px 2px 5px #00000072;
-  font-weight: bold; */
- 
+.icontxt{
   text-align: center;
+  font-size: smaller;
 }
 
-.iconText{
+.iconInfo{
   text-align: center;
 }
 
@@ -129,9 +128,15 @@ code {
   display: block;
 }
 
+.content {
+  position: relative;
+  min-height: 91vh;
+}
+
 .footer {
-  flex: 0 0 50px;
-  margin-top: auto;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
 
 .iconBox{

@@ -91,10 +91,11 @@ function Portfolio() {
     ])
 
     return (
-        <section>
+        <div className='content pb-5'>
+
             <h2>Portfolio</h2>
 
-            <Container className='bg-light bg-opacity-50 rounded-4 mb-5 shadow'>
+            <Container className='bg-light bg-opacity-50 rounded-4 shadow mt-5'>
                 <Row className='p-3'>
                     {projects.map((project, i) => (
                         <Col xs={6} md={4} className='project-col'>
@@ -103,8 +104,7 @@ function Portfolio() {
                     ))}
                 </Row>
             </Container>
-
-        </section>
+        </div>
     )
 }
 

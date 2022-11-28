@@ -19,7 +19,7 @@ function Footer() {
 
     return (
         <footer className='footer'>
-            <div className=" d-flex justify-content-center bg-light">
+            <div className="fixed-bottom d-flex justify-content-center bg-light ">
 
                 {icons.map(icon =>
                     <div className='px-2 gradient-text opacity-75 fs-5'>

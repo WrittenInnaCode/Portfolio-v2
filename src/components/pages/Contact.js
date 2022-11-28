@@ -4,9 +4,10 @@ import Button from 'react-bootstrap/Button';
 
 function Contact() {
     return (
-        <section>
-            <h2>Contact</h2>
-            <div>
+        <div className='content'>
+
+            <h2>Contact Me</h2>
+            <div className='m-5'>
                 <Form className='bg-light bg-opacity-50 rounded-4 m-5 p-5 shadow'>
 
                     <Form.Group className="mb-3">
@@ -26,7 +27,8 @@ function Contact() {
                     <Button variant="primary">Send</Button>
                 </Form>
             </div>
-        </section>
+
+        </div>
     )
 }
 
