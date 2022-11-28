@@ -28,10 +28,12 @@ function App() {
     }
   }
 
+  const handlePageChange = (page) => setCurrentPage(page);
+
   return (
     <>
       <div className="bgColor">
-        <Header currentPage={currentPage} setCurrentPage={setCurrentPage} />
+        <Header currentPage={currentPage} handlePageChange={handlePageChange} />
 
         {renderCurrentPage()}
 

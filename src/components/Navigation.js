@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Navigation({ currentPage, setCurrentPage }) {
+function Navigation({ currentPage, handlePageChange }) {
 
     return (
 
@@ -18,7 +18,7 @@ function Navigation({ currentPage, setCurrentPage }) {
 
                             <li className="nav-item">
                                 <a href="#about"
-                                    onClick={(event) => { event.preventDefault(); setCurrentPage('about') }}
+                                    onClick={(event) => { event.preventDefault(); handlePageChange('about') }}
                                     className={currentPage === "about" ? "nav-link active" : "nav-link"}
                                 >About Me
                                 </a>
@@ -26,7 +26,7 @@ function Navigation({ currentPage, setCurrentPage }) {
 
                             <li className="nav-item">
                                 <a href="#portfolio"
-                                    onClick={(event) => { event.preventDefault(); setCurrentPage('portfolio') }}
+                                    onClick={(event) => { event.preventDefault(); handlePageChange('portfolio') }}
                                     className={currentPage === "portfolio" ? "nav-link active" : "nav-link"}
                                 >Portfolio
                                 </a>
@@ -34,7 +34,7 @@ function Navigation({ currentPage, setCurrentPage }) {
 
                             <li className="nav-item">
                                 <a href="#contact"
-                                    onClick={(event) => { event.preventDefault(); setCurrentPage('contact') }}
+                                    onClick={(event) => { event.preventDefault(); handlePageChange('contact') }}
                                     className={currentPage === "contact" ? "nav-link active" : "nav-link"}
                                 >Contact
                                 </a>
@@ -42,7 +42,7 @@ function Navigation({ currentPage, setCurrentPage }) {
 
                             <li className="nav-item">
                                 <a href="#resume"
-                                    onClick={(event) => { event.preventDefault(); setCurrentPage('resume') }}
+                                    onClick={(event) => { event.preventDefault(); handlePageChange('resume') }}
                                     className={currentPage === "resume" ? "nav-link active" : "nav-link"}
                                 >Resume
                                 </a>
