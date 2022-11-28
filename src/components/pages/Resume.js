@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col } from 'react-bootstrap';
+import { Row, Col, Button } from 'react-bootstrap';
 
 
 function Resume() {
@@ -121,67 +121,71 @@ function Resume() {
 
 
     return (
-        <div className='content p-4'>
-            <div className='d-flex justify-content-center'>
-                <div className='bg-light bg-opacity-50  m-5 p-3 shadow iconBox '>
+        <div className='resume p-4 '>
 
-                    <h5 className='border-bottom border-white pb-1 ps-1'>Skills & Technologies</h5>
-                    <p className='p-3 ps-1'> I enjoy learning and mastering new technologies. I gained most of these skills in the coding bootcamp.</p>
+            <div className='bg-light bg-opacity-50 rounded-4 mb-5 p-3 shadow resumeBox'>
+                <p><Button variant="outline-primary"> Click here to download my resume</Button></p> 
+            </div>
 
-                    {/* Front-End Icons */}
-                    <div className='shadow rounded mb-4'>
-                        <div className='text-center'><p className='text-muted pt-2'>Client-Side</p></div>
+            <div className='bg-light bg-opacity-50 rounded-4 p-3 shadow iconBox '>
 
-                        <Row className='mb-4'>
-                            {frontIcons.map(frontIcon =>
-                                <Col className='iconInfo wrapper ps-2'>
-                                    <div className='box1'><i className={frontIcon.icon}></i></div>
-                                    <div className='box2'><i className={frontIcon.iconColor}></i></div>
+                <h5 className='border-bottom border-white pb-1 ps-1'>Skills & Technologies</h5>
+                <p className='p-3 ps-1'> I enjoy learning and mastering new technologies. I gained most of these skills in the coding bootcamp.</p>
 
-                                    <p className='icontxt text-muted'>{frontIcon.title}</p>
+                {/* Front-End Icons */}
+                <div className='shadow rounded mb-4'>
+                    <div className='text-center'><p className='text-muted pt-2'>Client-Side</p></div>
 
-                                </Col>
-                            )}
-                        </Row>
-                    </div>
+                    <Row className='mb-4'>
+                        {frontIcons.map(frontIcon =>
+                            <Col className='iconInfo wrapper ps-2'>
+                                <div className='box1'><i className={frontIcon.icon}></i></div>
+                                <div className='box2'><i className={frontIcon.iconColor}></i></div>
 
+                                <p className='icontxt text-muted'>{frontIcon.title}</p>
 
-                    {/* Back-End Icons */}
-                    <div className='shadow rounded mb-4'>
-                        <div className='text-center'><p className='text-muted pt-2'>Server-Side</p></div>
-
-                        <Row className='mb-4'>
-                            {backIcons.map(backIcon =>
-                                <Col className='iconInfo wrapper ps-2'>
-                                    <div className='box1'><i className={backIcon.icon}></i></div>
-                                    <div className='box2'><i className={backIcon.iconColor}></i></div>
-
-                                    <p className='icontxt text-muted'>{backIcon.title}</p>
-
-                                </Col>
-                            )}
-                        </Row>
-                    </div>
+                            </Col>
+                        )}
+                    </Row>
+                </div>
 
 
-                    {/* Other Icons */}
-                    <div className='rounded shadow'>
-                        <div className='text-center'><p className='text-muted pt-2'>Other</p></div>
+                {/* Back-End Icons */}
+                <div className='shadow rounded mb-4'>
+                    <div className='text-center'><p className='text-muted pt-2'>Server-Side</p></div>
 
-                        <Row>
-                            {otherIcons.map(otherIcon =>
-                                <Col className='iconInfo wrapper ps-2'>
-                                    <div className='box1'><i className={otherIcon.icon}></i></div>
-                                    <div className='box2'><i className={otherIcon.iconColor}></i></div>
+                    <Row className='mb-4'>
+                        {backIcons.map(backIcon =>
+                            <Col className='iconInfo wrapper ps-2'>
+                                <div className='box1'><i className={backIcon.icon}></i></div>
+                                <div className='box2'><i className={backIcon.iconColor}></i></div>
 
-                                    <p className='icontxt text-muted'>{otherIcon.title}</p>
+                                <p className='icontxt text-muted'>{backIcon.title}</p>
 
-                                </Col>
-                            )}
-                        </Row>
-                    </div>
+                            </Col>
+                        )}
+                    </Row>
+                </div>
+
+
+                {/* Other Icons */}
+                <div className='rounded shadow'>
+                    <div className='text-center'><p className='text-muted pt-2'>Other</p></div>
+
+                    <Row>
+                        {otherIcons.map(otherIcon =>
+                            <Col className='iconInfo wrapper ps-2'>
+                                <div className='box1'><i className={otherIcon.icon}></i></div>
+                                <div className='box2'><i className={otherIcon.iconColor}></i></div>
+
+                                <p className='icontxt text-muted'>{otherIcon.title}</p>
+
+                            </Col>
+                        )}
+                    </Row>
                 </div>
             </div>
+
         </div>
 
     );

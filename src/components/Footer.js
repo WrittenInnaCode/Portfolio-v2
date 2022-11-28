@@ -4,15 +4,15 @@ function Footer() {
 
     const icons = [
         {
-            name: 'fab fa-github',
+            name: 'fa-brands fa-github',
             link: 'https://github.com/WrittenInnaCode'
         },
         {
-            name: 'fab fa-linkedin',
+            name: 'fa-brands fa-linkedin',
             link: 'https://www.linkedin.com/in/inna-sherstnyova-b6a56a1b0'
         },
         {
-            name: 'fas fa-at',
+            name: 'fa-solid fa-at',
             link: 'mailto:writteninnacode@gmail.com'
         },
     ]
