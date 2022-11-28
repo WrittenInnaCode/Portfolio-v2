@@ -95,8 +95,8 @@ function Portfolio() {
 
             <h2>Portfolio</h2>
 
-            <Container className='bg-light bg-opacity-50 rounded-4 shadow mt-5'>
-                <Row className='p-3'>
+            <Container className='bg-light bg-opacity-50 rounded-4 shadow mt-5 mb-5'>
+                <Row className='portfolio p-3'>
                     {projects.map((project, i) => (
                         <Col xs={6} md={4} className='project-col'>
                             <Project project={project} key={"project" + i} />

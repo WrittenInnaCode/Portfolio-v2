@@ -151,7 +151,7 @@ function About() {
                             <p className='text-muted pt-2'>Client-Side</p>
 
                             {frontIcons.map(frontIcon =>
-                                <Col className='iconInfo wrapper ps-2'>
+                                <Col className='wrapper ps-2'>
                                     <div className='box1'><i className={frontIcon.icon}></i></div>
                                     <div className='box2'><i className={frontIcon.iconColor}></i></div>
                                     <p className='icontxt text-muted'>{frontIcon.title}</p>
@@ -168,7 +168,7 @@ function About() {
                             <p className='text-muted pt-2'>Server-Side</p>
 
                             {backIcons.map(backIcon =>
-                                <Col className='iconInfo wrapper ps-2'>
+                                <Col className='wrapper ps-2'>
                                     <div className='box1'><i className={backIcon.icon}></i></div>
                                     <div className='box2'><i className={backIcon.iconColor}></i></div>
                                     <p className='icontxt text-muted'>{backIcon.title}</p>
@@ -185,7 +185,7 @@ function About() {
                             <p className='text-muted pt-2'>Other</p>
 
                             {otherIcons.map(otherIcon =>
-                                <Col className='iconInfo wrapper ps-2'>
+                                <Col className='wrapper ps-2'>
                                     <div className='box1'><i className={otherIcon.icon}></i></div>
                                     <div className='box2'><i className={otherIcon.iconColor}></i></div>
                                     <p className='icontxt text-muted'>{otherIcon.title}</p>

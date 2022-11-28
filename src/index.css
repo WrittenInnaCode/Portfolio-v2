@@ -83,6 +83,11 @@ margin: 3rem;
     flex-direction: column;
   }
 }
+/* @media screen and (max-width: 800px) {
+  .portfolio {
+    flex-direction: column;
+  }
+} */
 
 .portfolio-box {
   position: relative;
@@ -132,10 +137,6 @@ margin: 3rem;
   font-size: smaller;
 }
 
-.iconInfo{
-  /* text-align: center; */
-}
-
 .box1 {
   display: block;
 }
@@ -157,10 +158,6 @@ margin: 3rem;
   display: block;
 }
 
-/* .content {
-  position: relative;
-  min-height: 91vh;
-} */
 
 .footer {
   position: relative;
@@ -181,4 +178,12 @@ margin: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.octocat{
+  max-width: 200px;
+}
+.octoBox{
+  display: flex;
+  justify-content: center;
 }
