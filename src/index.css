@@ -12,11 +12,12 @@ code {
     monospace;
 }
 
-h2{
+h2 {
   color: white;
   margin: 1rem;
   padding-top: 1rem;
 }
+
 .gradient-text {
   /* Fallback: Set a background color. */
   background-color: black;
@@ -42,13 +43,13 @@ h2{
   border-radius: 20px;
 }
 
-.hiBox{
+.hiBox {
   max-width: 400px;
-  padding:1rem;
+  padding: 1rem;
 }
 
-.aboutBox{
-margin: 3rem;
+.aboutBox {
+  margin: 3rem;
 }
 
 .about {
@@ -83,11 +84,29 @@ margin: 3rem;
     flex-direction: column;
   }
 }
-/* @media screen and (max-width: 800px) {
-  .portfolio {
-    flex-direction: column;
+
+@media screen and (max-width: 766px) {
+  .media-portfolio-1 {
+    display: none;
   }
-} */
+
+  .media-portfolio-2 {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .media-portfolio-2 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .gradient-text {
+    font-size: 20px;
+  }
+}
+
 
 .portfolio-box {
   position: relative;
@@ -118,21 +137,22 @@ margin: 3rem;
   opacity: 0.9;
 }
 
-.project-col{
+.project-col {
   padding: 1rem;
 }
 
-.devicon{
+.devicon {
   font-size: 200%;
   color: rgb(255, 255, 255);
   text-shadow: 2px 2px 5px #00000072;
 }
-.deviconColor{
+
+.deviconColor {
   font-size: 200%;
   text-shadow: 2px 2px 5px #00000072;
 }
 
-.icontxt{
+.icontxt {
   text-align: center;
   font-size: smaller;
 }
@@ -145,7 +165,7 @@ margin: 3rem;
   display: none;
 }
 
-.wrapper{
+.wrapper {
   width: auto;
   display: inline-block;
 }
@@ -165,29 +185,30 @@ margin: 3rem;
   width: 100%;
 }
 
-.contactMe{
+.contactMe {
   display: flex;
   justify-content: center;
 }
 
-.fa-envelope{
+.fa-envelope {
   color: white;
 }
 
-.resume{
+.resume {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.octocat{
+.octocat {
   max-width: 200px;
 }
-.octoBox{
+
+.octoBox {
   display: flex;
   justify-content: center;
 }
 
-.resumeIcon{
+.resumeIcon {
   color: rgba(128, 128, 128, 0.71)
 }
