@@ -11,7 +11,7 @@ import Resume from './components/pages/Resume';
 
 function App() {
 
-  const [currentPage, setCurrentPage] = useState('about');
+  const [currentPage, setCurrentPage] = useState('About');
 
   const renderCurrentPage = () => {
     switch (currentPage) {
@@ -31,7 +31,7 @@ function App() {
   return (
     <>
       <div className="bgColor">
-        <Header setCurrentPage={setCurrentPage} />
+        <Header currentPage={currentPage} setCurrentPage={setCurrentPage} />
 
         {renderCurrentPage()}
 

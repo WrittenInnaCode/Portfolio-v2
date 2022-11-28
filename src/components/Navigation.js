@@ -1,5 +1,6 @@
 import React from 'react';
-function Navigation({ setCurrentPage }) {
+
+function Navigation({ currentPage, setCurrentPage }) {
 
     return (
 
@@ -16,31 +17,35 @@ function Navigation({ setCurrentPage }) {
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-end">
 
                             <li className="nav-item">
-                                <a className="nav-link" href="" onClick={(event) => {
-                                    event.preventDefault();
-                                    setCurrentPage('about');
-                                }}>About Me</a>
+                                <a href="#about"
+                                    onClick={(event) => { event.preventDefault(); setCurrentPage('about') }}
+                                    className={currentPage === "about" ? "nav-link active" : "nav-link"}
+                                >About Me
+                                </a>
                             </li>
 
                             <li className="nav-item">
-                                <a className="nav-link" href="" onClick={(event) => {
-                                    event.preventDefault();
-                                    setCurrentPage('portfolio');
-                                }}>Portfolio</a>
+                                <a href="#portfolio"
+                                    onClick={(event) => { event.preventDefault(); setCurrentPage('portfolio') }}
+                                    className={currentPage === "portfolio" ? "nav-link active" : "nav-link"}
+                                >Portfolio
+                                </a>
                             </li>
 
                             <li className="nav-item">
-                                <a className="nav-link" href="" onClick={(event) => {
-                                    event.preventDefault();
-                                    setCurrentPage('contact');
-                                }}>Contact</a>
+                                <a href="#contact"
+                                    onClick={(event) => { event.preventDefault(); setCurrentPage('contact') }}
+                                    className={currentPage === "contact" ? "nav-link active" : "nav-link"}
+                                >Contact
+                                </a>
                             </li>
 
                             <li className="nav-item">
-                                <a className="nav-link" href="" onClick={(event) => {
-                                    event.preventDefault();
-                                    setCurrentPage('resume');
-                                }}>Resume</a>
+                                <a href="#resume"
+                                    onClick={(event) => { event.preventDefault(); setCurrentPage('resume') }}
+                                    className={currentPage === "resume" ? "nav-link active" : "nav-link"}
+                                >Resume
+                                </a>
                             </li>
 
                         </ul>

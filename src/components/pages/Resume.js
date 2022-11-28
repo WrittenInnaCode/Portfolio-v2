@@ -142,15 +142,15 @@ function Resume() {
 
                         <Row>
                             <div className='iconsFlex'>
-                            {frontIcons.map(frontIcon =>
-                                <Col className='iconInfo text-center wrapper px-2'>
-                                    <div className='box1'><i className={frontIcon.icon}></i></div>
-                                    <div className='box2'><i className={frontIcon.iconColor}></i></div>
+                                {frontIcons.map(frontIcon =>
+                                    <Col className='iconInfo text-center wrapper px-2'>
+                                        <div className='box1'><i className={frontIcon.icon}></i></div>
+                                        <div className='box2'><i className={frontIcon.iconColor}></i></div>
 
-                                    <p className='icontxt text-muted'>{frontIcon.title}</p>
+                                        <p className='icontxt text-muted'>{frontIcon.title}</p>
 
-                                </Col>
-                            )}
+                                    </Col>
+                                )}
                             </div>
                         </Row>
                     </div>
@@ -161,16 +161,16 @@ function Resume() {
                         <div className='text-center'><p className='text-muted pt-2'>Server-Side</p></div>
 
                         <Row>
-                        <div className='iconsFlex'>
-                            {backIcons.map(backIcon =>
-                                <Col className='iconInfo text-center wrapper px-2'>
-                                    <div className='box1'><i className={backIcon.icon}></i></div>
-                                    <div className='box2'><i className={backIcon.iconColor}></i></div>
+                            <div className='iconsFlex'>
+                                {backIcons.map(backIcon =>
+                                    <Col className='iconInfo text-center wrapper px-2'>
+                                        <div className='box1'><i className={backIcon.icon}></i></div>
+                                        <div className='box2'><i className={backIcon.iconColor}></i></div>
 
-                                    <p className='icontxt text-muted'>{backIcon.title}</p>
+                                        <p className='icontxt text-muted'>{backIcon.title}</p>
 
-                                </Col>
-                            )}
+                                    </Col>
+                                )}
                             </div>
                         </Row>
                     </div>
@@ -181,16 +181,16 @@ function Resume() {
                         <div className='text-center'><p className='text-muted pt-2'>Other</p></div>
 
                         <Row>
-                        <div className='iconsFlex'>
-                            {otherIcons.map(otherIcon =>
-                                <Col className='iconInfo text-center wrapper px-2'>
-                                    <div className='box1'><i className={otherIcon.icon}></i></div>
-                                    <div className='box2'><i className={otherIcon.iconColor}></i></div>
+                            <div className='iconsFlex'>
+                                {otherIcons.map(otherIcon =>
+                                    <Col className='iconInfo text-center wrapper px-2'>
+                                        <div className='box1'><i className={otherIcon.icon}></i></div>
+                                        <div className='box2'><i className={otherIcon.iconColor}></i></div>
 
-                                    <p className='icontxt text-muted'>{otherIcon.title}</p>
+                                        <p className='icontxt text-muted'>{otherIcon.title}</p>
 
-                                </Col>
-                            )}
+                                    </Col>
+                                )}
                             </div>
                         </Row>
                     </div>

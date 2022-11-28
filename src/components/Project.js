@@ -27,7 +27,7 @@ function Project({ project }) {
 
             <div className='media-portfolio-2'>
                 <div className="portfolio-box-media text-center bg-light bg-opacity-50 shadow p-1" key={name}>
-                <a href={deployedLink} target="_blank" rel="noreferrer"><img
+                    <a href={deployedLink} target="_blank" rel="noreferrer"><img
                         src={require(`../assets/images/portfolio/${image}`)}
                         alt={name}
                         className="img-fluid"
@@ -35,7 +35,7 @@ function Project({ project }) {
                     <div className="portfolio-caps-media">
                         <div className="portfolio-content-media gradient-text text-center pt-2">
 
-                            <a href={deployedLink} target="_blank" rel="noreferrer">{name}</a> <br/>
+                            <a href={deployedLink} target="_blank" rel="noreferrer">{name}</a> <br />
                             <a href={githubLink} target="_blank" rel="noreferrer"><i className='fab fa-github'></i> Repo</a>
                             <p className="fs-6">{description}</p>
 
