@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/portfolio-v2/static/css/main.3b3c3ef8.css",
+    "main.js": "/portfolio-v2/static/js/main.8226bad6.js",
+    "static/js/787.d9a20797.chunk.js": "/portfolio-v2/static/js/787.d9a20797.chunk.js",
+    "static/media/Inna-2.jpg": "/portfolio-v2/static/media/Inna-2.0c464ca091551130c01c.jpg",
+    "static/media/05-cocktails.png": "/portfolio-v2/static/media/05-cocktails.c834e68160c05f7817bc.png",
+    "static/media/06-ReadMe.png": "/portfolio-v2/static/media/06-ReadMe.3c9108dbf3acc6a0c078.png",
+    "static/media/09-employee-tracker.png": "/portfolio-v2/static/media/09-employee-tracker.7d7c202211fcdd272293.png",
+    "static/media/07-team-generator.png": "/portfolio-v2/static/media/07-team-generator.ff0634d56a1e0f998b55.png",
+    "static/media/11-techblog.png": "/portfolio-v2/static/media/11-techblog.f12c62dcf49aebd92e4e.png",
+    "static/media/12-social-network.png": "/portfolio-v2/static/media/12-social-network.5362033257c1a685257d.png",
+    "static/media/04-weather-dashboard.png": "/portfolio-v2/static/media/04-weather-dashboard.62a166eb17826cdf87c0.png",
+    "static/media/10-ecommerce.png": "/portfolio-v2/static/media/10-ecommerce.9d864a9ee5aaae54cbcc.png",
+    "static/media/octocatInna.png": "/portfolio-v2/static/media/octocatInna.18e82389310278940c38.png",
+    "static/media/14-courier.png": "/portfolio-v2/static/media/14-courier.0a67cadc0c9e25520370.png",
+    "static/media/02-quiz.png": "/portfolio-v2/static/media/02-quiz.7aab541948b3df9835c1.png",
+    "static/media/03-workday-scheduler.png": "/portfolio-v2/static/media/03-workday-scheduler.65aa7525239694cfafac.png",
+    "static/media/01-pass-gen.png": "/portfolio-v2/static/media/01-pass-gen.f5e0854720127d0679c2.png",
+    "static/media/08-notetaker.png": "/portfolio-v2/static/media/08-notetaker.ac72fb936c850c9ee835.png",
+    "static/media/13-jate.png": "/portfolio-v2/static/media/13-jate.112bc0a79647aab97a96.png",
+    "static/media/Resume.pdf": "/portfolio-v2/static/media/Resume.827e7aff638f5c7186cb.pdf",
+    "index.html": "/portfolio-v2/index.html",
+    "main.3b3c3ef8.css.map": "/portfolio-v2/static/css/main.3b3c3ef8.css.map",
+    "main.8226bad6.js.map": "/portfolio-v2/static/js/main.8226bad6.js.map",
+    "787.d9a20797.chunk.js.map": "/portfolio-v2/static/js/787.d9a20797.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3b3c3ef8.css",
+    "static/js/main.8226bad6.js"
+  ]
+}
