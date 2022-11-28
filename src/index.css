@@ -44,8 +44,14 @@ h2 {
 }
 
 .hiBox {
-  max-width: 400px;
+  max-width: 550px;
   padding: 1rem;
+}
+
+.aboutMain{
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 .aboutBox {
@@ -56,20 +62,8 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  justify-content: space-evenly;
-  padding: 3rem;
-}
-
-@media screen and (max-width: 800px) {
-  .about {
-    flex-direction: column;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .skills {
-    flex-direction: column;
-  }
+  justify-content: space-between;
+  padding: 5rem;
 }
 
 .contactForm {
@@ -79,34 +73,9 @@ h2 {
   justify-content: space-evenly;
 }
 
-@media screen and (max-width: 800px) {
-  .contactForm {
-    flex-direction: column;
-  }
+.iconBox{
+margin-bottom: 2rem;
 }
-
-@media screen and (max-width: 766px) {
-  .media-portfolio-1 {
-    display: none;
-  }
-
-  .media-portfolio-2 {
-    display: block;
-  }
-}
-
-@media screen and (min-width: 767px) {
-  .media-portfolio-2 {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 991px) {
-  .gradient-text {
-    font-size: 20px;
-  }
-}
-
 
 .portfolio-box {
   position: relative;
@@ -188,6 +157,7 @@ h2 {
 .contactMe {
   display: flex;
   justify-content: center;
+  margin:3rem;
 }
 
 .fa-envelope {
@@ -211,4 +181,45 @@ h2 {
 
 .resumeIcon {
   color: rgba(128, 128, 128, 0.71)
+}
+
+
+@media screen and (max-width: 800px) {
+  .about {
+    flex-direction: column;
+  }
+  .skills {
+    flex-direction: column;
+  }
+  .contactForm {
+    flex-direction: column;
+  }
+  .iconsFlex{
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 766px) {
+  .media-portfolio-1 {
+    display: none;
+  }
+
+  .media-portfolio-2 {
+    display: block;
+  }
+  .aboutBox {
+    margin: 0rem;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .media-portfolio-2 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .gradient-text {
+    font-size: 20px;
+  }
 }

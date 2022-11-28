@@ -122,9 +122,9 @@ function Resume() {
 
 
     return (
-        <div className='resume p-4 '>
+        <div className='resume p-4'>
 
-            <div className='aboutBox bg-light bg-opacity-50 rounded-4 shadow p-4'>
+            <div className='aboutBox bg-light bg-opacity-50 rounded-4 shadow p-4 mb-4'>
 
                 <div className='bg-light bg-opacity-50 rounded-4 mb-5 p-4 shadow text-center'>
                     <p>Download my Resume:</p>
@@ -133,16 +133,17 @@ function Resume() {
 
                 <div className='rounded-4 p-3 iconBox text-center'>
 
-                    <h5 className='gradient-text border-bottom border-white pb-1 ps-1 fs-4'>Skills & Technologies</h5>
+                    <h5 className='gradient-text border-bottom border-2 border-white pb-1 ps-1 fs-4'>Skills & Technologies</h5>
                     <p className='text-center p-4 ps-1'> I enjoy learning and mastering new technologies. I gained most of these skills in the coding bootcamp.</p>
 
                     {/* Front-End Icons */}
-                    <div className='shadow rounded mb-5'>
+                    <div className='iconBox shadow rounded'>
                         <div className='text-center'><p className='text-muted pt-2'>Client-Side</p></div>
 
-                        <Row className='mb-4'>
+                        <Row>
+                            <div className='iconsFlex'>
                             {frontIcons.map(frontIcon =>
-                                <Col className='iconInfo text-center wrapper ps-2'>
+                                <Col className='iconInfo text-center wrapper px-2'>
                                     <div className='box1'><i className={frontIcon.icon}></i></div>
                                     <div className='box2'><i className={frontIcon.iconColor}></i></div>
 
@@ -150,17 +151,19 @@ function Resume() {
 
                                 </Col>
                             )}
+                            </div>
                         </Row>
                     </div>
 
 
                     {/* Back-End Icons */}
-                    <div className='shadow rounded mb-5'>
+                    <div className='iconBox shadow rounded'>
                         <div className='text-center'><p className='text-muted pt-2'>Server-Side</p></div>
 
-                        <Row className='mb-4'>
+                        <Row>
+                        <div className='iconsFlex'>
                             {backIcons.map(backIcon =>
-                                <Col className='iconInfo text-center wrapper ps-2'>
+                                <Col className='iconInfo text-center wrapper px-2'>
                                     <div className='box1'><i className={backIcon.icon}></i></div>
                                     <div className='box2'><i className={backIcon.iconColor}></i></div>
 
@@ -168,17 +171,19 @@ function Resume() {
 
                                 </Col>
                             )}
+                            </div>
                         </Row>
                     </div>
 
 
                     {/* Other Icons */}
-                    <div className='rounded shadow mb-2'>
+                    <div className='iconBox rounded shadow mb-1'>
                         <div className='text-center'><p className='text-muted pt-2'>Other</p></div>
 
                         <Row>
+                        <div className='iconsFlex'>
                             {otherIcons.map(otherIcon =>
-                                <Col className='iconInfo text-center wrapper ps-2'>
+                                <Col className='iconInfo text-center wrapper px-2'>
                                     <div className='box1'><i className={otherIcon.icon}></i></div>
                                     <div className='box2'><i className={otherIcon.iconColor}></i></div>
 
@@ -186,6 +191,7 @@ function Resume() {
 
                                 </Col>
                             )}
+                            </div>
                         </Row>
                     </div>
                 </div>
