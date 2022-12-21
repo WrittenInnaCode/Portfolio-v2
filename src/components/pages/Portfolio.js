@@ -5,6 +5,13 @@ import { Container, Row, Col } from 'react-bootstrap';
 function Portfolio() {
     const [projects] = useState([
         {
+            name: "in_tangible.obj",
+            description: "React, GraphQL, Node.js, Express.js, MongoDB",
+            deployedLink: "https://in-tangible-obj.herokuapp.com/",
+            githubLink: "https://github.com/WrittenInnaCode/intangible.obj",
+            image: "15-intangible.png"
+        },
+        {
             name: "Courier App",
             description: "Javascript, Express, Sequelize, Handlebars",
             deployedLink: "https://courier-share.herokuapp.com/info",
