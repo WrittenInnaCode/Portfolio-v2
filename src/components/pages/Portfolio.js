@@ -25,13 +25,13 @@ function Portfolio() {
             githubLink: "https://github.com/WrittenInnaCode/Tech_Blog",
             image: "11-techblog.png"
         },
-        {
-            name: "Cocktails App",
-            description: "Javascript, HTML, CSS, Bulma",
-            deployedLink: "https://jamesdartmouth.github.io/Cocktails-with-Kanye/",
-            githubLink: "https://github.com/WrittenInnaCode/Cocktails-with-Kanye",
-            image: "05-cocktails.png"
-        },
+        // {
+        //     name: "Cocktails App",
+        //     description: "Javascript, HTML, CSS, Bulma",
+        //     deployedLink: "https://jamesdartmouth.github.io/Cocktails-with-Kanye/",
+        //     githubLink: "https://github.com/WrittenInnaCode/Cocktails-with-Kanye",
+        //     image: "05-cocktails.png"
+        // },
         {
             name: "Just Another Text Editor",
             description: "Javascript, HTML, CSS",

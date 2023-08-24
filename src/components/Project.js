@@ -16,9 +16,9 @@ function Project({ project }) {
                     <div className="portfolio-caps">
                         <div className="portfolio-content gradient-text text-center">
 
-                            <a href={deployedLink} target="_blank" rel="noreferrer">{name}</a>
-                            <a href={githubLink} target="_blank" rel="noreferrer"><i className='fab fa-github'></i></a>
-                            <p className="fs-6">{description}</p>
+                            <a className='link p-1' href={deployedLink} target="_blank" rel="noreferrer">Go to {name}</a>
+                            <a className="link fs-5 p-1" href={githubLink} target="_blank" rel="noreferrer"><i className='fab fa-github'></i> Go to Github Repo</a>
+                            <p className="fs-6 p-1">Technologies: {description}</p>
 
                         </div>
                     </div>
