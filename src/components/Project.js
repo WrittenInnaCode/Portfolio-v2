@@ -16,16 +16,16 @@ function Project({ project }) {
                     <div className="portfolio-caps">
                         <div className="portfolio-content gradient-text text-center">
 
-                            <a className='link p-1' href={deployedLink} target="_blank" rel="noreferrer">Go to {name}</a>
-                            <a className="link fs-5 p-1" href={githubLink} target="_blank" rel="noreferrer"><i className='fab fa-github'></i> Go to Github Repo</a>
-                            <p className="fs-6 p-1">Technologies: {description}</p>
+                            <a className="appLink fs-4 fw-bold" href={deployedLink} target="_blank" rel="noreferrer">{name}</a>
+                            <p className="appDescription">{description}</p>
+                            <a className="githubLink fw-semibold" href={githubLink} target="_blank" rel="noreferrer"><i className='fab fa-github'></i> Github Repo</a>
 
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div className='media-portfolio-2'>
+            {/* <div className='media-portfolio-2'>
                 <div className="portfolio-box-media text-center bg-light bg-opacity-50 shadow p-1" key={name}>
                     <a href={deployedLink} target="_blank" rel="noreferrer"><img
                         src={require(`../assets/images/portfolio/${image}`)}
@@ -42,7 +42,7 @@ function Project({ project }) {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
         </div>
     )
